@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
 	const navigate = useNavigate();
-	const [errorMessage, setErrorMessage] = useState('');
+	const [errorMessage, setErrorMessage] = useState("");
 	const [userData, setUserData] = useState({
 		email: "",
 		password: "",
@@ -21,19 +21,20 @@ const SignUp = () => {
 	//! Signup function
 	const handleSignUp = async () => {
 		try {
-		  const response = await axios.post("/auth/signup", userData);
-		  console.log(response.data.message);
-		  // If successful, navigate or perform any other action
+			const response = await axios.post("/auth/signup", userData);
+			if (response.status === 201) {
+				navigate("/login");
+			}
 		} catch (error) {
-		  if (error.response && error.response.status === 400) {
-			// If user already exists, set error message
-			setErrorMessage(error.response.data.message);
-		  } else {
-			// Handle other errors
-			console.error('Error signing up:', error.message);
-		  }
+			if (error.response && error.response.status === 400) {
+				// If user already exists, set error message
+				setErrorMessage(error.response.data.message);
+			} else {
+				// Handle other errors
+				console.error("Error signing up:", error.message);
+			}
 		}
-	  };
+	};
 	return (
 		<>
 			<section className="bg-gray-50 dark:bg-gray-900">
