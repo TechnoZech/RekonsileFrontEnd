@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed Link => [https://rekonsile-front-end.vercel.app](https://github.com/facebook/create-react-app](https://rekonsile-front-end.vercel.app/)).
+Server Repository URL => [https://github.com/TechnoZech/RekonsileTestServer](https://github.com/TechnoZech/RekonsileTestServer)).
+Server Deployed URL => [https://rekonsiletestserver.onrender.com](https://rekonsiletestserver.onrender.com)).
 
 ## Available Scripts
 
