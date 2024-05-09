@@ -1,8 +1,14 @@
 # Getting Started with Create React App
 
-Deployed Link => [https://rekonsile-front-end.vercel.app](https://github.com/facebook/create-react-app](https://rekonsile-front-end.vercel.app/)).
-Server Repository URL => [https://github.com/TechnoZech/RekonsileTestServer](https://github.com/TechnoZech/RekonsileTestServer)).
-Server Deployed URL => [https://rekonsiletestserver.onrender.com](https://rekonsiletestserver.onrender.com)).
+- Deployed Link => [https://rekonsile-front-end.vercel.app](https://github.com/facebook/create-react-app](https://rekonsile-front-end.vercel.app/)).
+- Server Repository URL => [https://github.com/TechnoZech/RekonsileTestServer](https://github.com/TechnoZech/RekonsileTestServer)).
+- Server Deployed URL => [https://rekonsiletestserver.onrender.com](https://rekonsiletestserver.onrender.com)).
+
+## Set up environment variables
+
+Create a .env file in the root directory and specify the required environment variables. Refer to the Environment Variables section for details.
+- REACT_APP_BASE_URL=http://localhost:8080
+
 
 ## Available Scripts
 
